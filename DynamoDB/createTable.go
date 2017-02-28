@@ -13,7 +13,7 @@ func main() {
 	// sessionパッケージのNewはSessionの構造体を渡します。フィールドにConfigとHandlersをもちます。
 	// awsパッケージのNewConfigは、新しいConfigポインタを返します。
 	// WithRegionはConfigのフィールドのRegionに値を入れます。
-	ddb := dynamodb.New(session.New(), aws.NewConfig().WithRegion("us-east-1"))
+	ddb := dynamodb.New(session.New(), aws.NewConfig().WithRegion("ap-northeast-1"))
 
 	// CreateTableInputはCreateTable操作の入力を表します。
 	params := &dynamodb.CreateTableInput{

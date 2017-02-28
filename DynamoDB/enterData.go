@@ -10,7 +10,7 @@ import (
 
 func main() {
 	// セッションを持つDynamoDBクライアントの新しいインスタンスを作成
-	ddb := dynamodb.New(session.New(), aws.NewConfig().WithRegion("us-east-1"))
+	ddb := dynamodb.New(session.New(), aws.NewConfig().WithRegion("ap-northeast-1"))
 
 	// UpdateItem操作の入力を表します。
 	param := &dynamodb.UpdateItemInput{
