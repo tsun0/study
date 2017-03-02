@@ -7,7 +7,7 @@ import (
 
 func main() {
 
-	fmt.Println("main: start")
+	fmt.Println("main: 開始")
 
 	fmt.Println("testを通常の関数として起動")
 	test()
@@ -16,7 +16,7 @@ func main() {
 	go test()
 
 	time.Sleep(3 * time.Second)
-	fmt.Println("main: finish")
+	fmt.Println("main: 終了")
 }
 
 func test() {
